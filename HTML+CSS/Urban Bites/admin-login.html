@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Urban Bite</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Big Shoulders Text', cursive;
+      margin: 0;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .login-container h1 {
+      color: #ffcc00;
+      margin-bottom: 30px;
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+      background: transparent;
+      color: white;
+      border: 1px solid #ffcc00;
+    }
+
+    .form-control::placeholder {
+      color: #cccccc;
+    }
+
+    .btn-login {
+      background: #ffcc00;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn-login:hover {
+      background: #ffffff;
+      color: #ffcc00;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h1>Admin Login</h1>
+    <form action="admin.html" method="get">
+      <input type="text" class="form-control" placeholder="Admin ID" name="adminId" required>
+      <input type="password" class="form-control" placeholder="Password" name="adminPassword" required>
+      <button type="submit" class="btn-login">Login</button>
+    </form>
+  </div>
+</body>
+</html>

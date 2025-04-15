@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table Reservations - Urban Bite</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 50px;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    h1 {
+      color: #343a40;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    table {
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      text-align: center;
+    }
+    .btn-remove {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Table Reservations</h1>
+  
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>123-456-7890</td>
+        <td><button class="btn btn-danger btn-sm" disabled>Remove</button></td>
+      </tr>
+      <!-- Add more static rows here as needed -->
+    </tbody>
+  </table>
+
+  <div class="text-center mt-4">
+    <a href="index.html" class="btn btn-primary">Back to Home</a>
+  </div>
+</div>
+
+</body>
+</html>

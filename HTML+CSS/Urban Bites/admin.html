@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Urban Bite</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+    body {
+      background: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Big Shoulders Text', cursive;
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+    }
+
+    .admin-title {
+      font-size: 3em;
+      font-weight: 800;
+      color: #ffcc00;
+      position: relative;
+      z-index: 2;
+      animation: glow 1.5s infinite alternate;
+      margin-bottom: 30px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #ffcc00; }
+      to { text-shadow: 0 0 20px #ffcc00; }
+    }
+
+    .admin-container, .login-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+      position: relative;
+      z-index: 2;
+      width: 90%;
+      max-width: 500px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .admin-container h2, .login-container h2 {
+      color: #fff;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .admin-btn, .login-btn {
+      background: #ffffff;
+      color: #ffcc00;
+      border: none;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .admin-btn:hover, .login-btn:hover {
+      background: #ffcc00;
+      color: #ffffff;
+      transform: scale(1.1);
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      color: #ffcc00;
+      font-size: 1em;
+    }
+
+    .back-btn:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 10px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="admin-title">Urban Bite Admin</h1>
+
+  <!-- LOGIN FORM (Just static now) -->
+  <div class="login-container">
+    <h2>Admin Login</h2>
+    <form>
+      <input type="text" placeholder="Admin ID" class="form-control mb-3" required>
+      <input type="password" placeholder="Password" class="form-control mb-3" required>
+      <button type="submit" class="login-btn">Login</button>
+      <div class="error-message">This form is now static (JavaScript removed).</div>
+    </form>
+  </div>
+
+  <!-- ADMIN PANEL (Always visible for demo without JS) -->
+  <div class="admin-container">
+    <h2>Manage Urban Bite 🍔</h2>
+    <button class="admin-btn">View Orders</button>
+    <button class="admin-btn">Manage Menu</button>
+    <button class="admin-btn">Add New Dish</button>
+    <button class="admin-btn">Customer Messages</button>
+    <br>
+    <a href="login.html" class="back-btn">← Back to Login</a>
+  </div>
+
+</body>
+</html>
